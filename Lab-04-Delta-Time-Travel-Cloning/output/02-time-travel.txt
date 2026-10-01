@@ -1,0 +1,20 @@
+LAB 4 - TIME TRAVEL OUTPUT
+
+Commands:
+SELECT * FROM customers VERSION AS OF 0;
+SELECT * FROM customers VERSION AS OF 1;
+SELECT * FROM customers VERSION AS OF 2;
+
+Observed results:
+Version 0:
+No rows.
+
+Version 1:
+No rows.
+
+Version 2:
+101 | Alice | alice@example.com | Active
+102 | Bob   | bob@example.com   | Active
+
+Purpose:
+Demonstrates reading previous Delta Lake table versions without changing the current table.
