@@ -1,0 +1,27 @@
+LAB 4 - FINAL VERIFICATION OUTPUT
+
+Command:
+DESCRIBE HISTORY customers;
+
+Verification:
+The table history now contains a RESTORE operation.
+
+Command:
+SELECT * FROM customers;
+
+Final restored state:
+
+101 | Alice | alice@example.com | Active
+102 | Bob   | bob@example.com   | Active
+
+Clone tables remain available:
+- customers_shallow_clone
+- customers_deep_clone
+
+Lab 4 evidence completed:
+- History
+- Time Travel
+- Shallow Clone
+- Deep Clone
+- Restore
+- Final Verification
