@@ -1,0 +1,19 @@
+LAB 4 - SHALLOW CLONE OUTPUT
+
+Command:
+CREATE TABLE customers_shallow_clone
+SHALLOW CLONE customers;
+
+Result:
+Source files: 2
+Copied files: 0
+
+Verification:
+SELECT * FROM customers_shallow_clone;
+
+101 | Alice   | alice@example.com | Active
+102 | Bob     | bob@example.com   | Active
+103 | Charlie | charlie@example.com | Active | Gold
+
+Purpose:
+Creates a shallow clone without copying the underlying data files.
