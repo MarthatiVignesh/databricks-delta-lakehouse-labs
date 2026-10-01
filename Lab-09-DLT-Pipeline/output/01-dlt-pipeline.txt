@@ -1,0 +1,17 @@
+LAB 9 - DLT PIPELINE OUTPUT
+
+Bronze:
+dlt_bronze_orders
+
+Silver:
+dlt_silver_orders
+
+Expectations:
+valid_amount -> amount > 0
+valid_customer -> customer_id IS NOT NULL
+
+Gold:
+dlt_gold_daily_sales
+
+Expected verification:
+The DLT pipeline compiles a dependency graph, executes quality checks, and records data-quality metrics in the DLT event log.
