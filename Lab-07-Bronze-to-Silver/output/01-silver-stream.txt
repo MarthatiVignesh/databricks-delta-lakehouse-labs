@@ -1,0 +1,20 @@
+LAB 7 - BRONZE TO SILVER OUTPUT
+
+Source:
+lab_db.bronze_orders
+
+Watermark:
+10 minutes on order_timestamp
+
+Validation:
+customer_id IS NOT NULL
+amount > 0
+
+Deduplication:
+order_id, order_timestamp
+
+Target:
+lab_db.silver_orders
+
+Guide expectation:
+12 duplicate events are eliminated and 5 invalid records are filtered before writing to Silver.
