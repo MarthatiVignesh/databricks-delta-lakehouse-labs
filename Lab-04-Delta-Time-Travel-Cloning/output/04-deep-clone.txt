@@ -1,0 +1,20 @@
+LAB 4 - DEEP CLONE OUTPUT
+
+Command:
+CREATE TABLE customers_deep_clone
+DEEP CLONE customers;
+
+Result:
+Source files: 2
+Copied files: 2
+Copied file size: 3055 bytes
+
+Verification:
+SELECT * FROM customers_deep_clone;
+
+101 | Alice   | alice@example.com | Active
+102 | Bob     | bob@example.com   | Active
+103 | Charlie | charlie@example.com | Active | Gold
+
+Purpose:
+Creates an independent deep clone by copying the required data files.
