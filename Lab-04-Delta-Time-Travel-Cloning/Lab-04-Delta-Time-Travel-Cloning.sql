@@ -27,3 +27,12 @@ SELECT * FROM customers_shallow_clone;
 
 -- 6. Verify deep clone
 SELECT * FROM customers_deep_clone;
+
+-- 7. Restore the main customers table to Version 2
+RESTORE TABLE customers TO VERSION AS OF 2;
+
+-- 8. Verify the restored table
+SELECT * FROM customers;
+
+-- 9. View history again and confirm the RESTORE operation
+DESCRIBE HISTORY customers;
