@@ -1,8 +1,0 @@
-LAB 10 - UNITY CATALOG OUTPUT
-
-GRANT USE CATALOG ON CATALOG main TO data_analysts;
-GRANT USE SCHEMA ON SCHEMA main.lab_db TO data_analysts;
-GRANT SELECT ON TABLE main.lab_db.gold_daily_sales TO data_analysts;
-
-Expected verification:
-The data_analysts principal receives the permissions specified in the practice guide.
