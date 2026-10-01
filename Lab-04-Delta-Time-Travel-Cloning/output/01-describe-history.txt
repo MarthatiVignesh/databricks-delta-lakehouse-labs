@@ -1,0 +1,10 @@
+LAB 4 - DESCRIBE HISTORY OUTPUT
+
+Command:
+DESCRIBE HISTORY customers;
+
+Purpose:
+Displays the Delta Lake transaction history of the customers table.
+
+Expected observation:
+The result shows the table versions, timestamps, operations, and operation parameters.
