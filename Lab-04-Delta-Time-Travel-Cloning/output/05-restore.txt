@@ -1,0 +1,18 @@
+LAB 4 - RESTORE OUTPUT
+
+Command:
+RESTORE TABLE customers TO VERSION AS OF 2;
+
+Verification command:
+SELECT * FROM customers;
+
+Restored Version 2 data:
+
+101 | Alice | alice@example.com | Active
+102 | Bob   | bob@example.com   | Active
+
+Purpose:
+Restores the main customers Delta table to the selected historical version.
+
+Note:
+The restore operation itself creates a new Delta transaction in the table history.
