@@ -1,0 +1,11 @@
+LAB 5 - OPTIMIZE AND Z-ORDER
+
+Command:
+OPTIMIZE lab_db.customers
+ZORDER BY (customer_id, signup_date);
+
+Expected verification:
+Delta files are compacted and Z-ORDER clustering is applied using customer_id and signup_date.
+
+Output status:
+Command executed successfully when supported by the Databricks environment.
